@@ -11,7 +11,7 @@ dateTime <- paste(subPCData$Date,subPCData$Time)
 subPCData$DateTime <- as.POSIXct(dateTime)
 #plot the chart
 #adjust global par settings
-par(mfcol=c(2,2),mar=c(4,4,2,1), oma=c(0,0,2,0))
+par(mfcol=c(2,2))
 
 with(subPCData, plot(Global_active_power ~ DateTime,type = "l",ylab = "Global Active Power (kilowatts)",xlab=""))
 
